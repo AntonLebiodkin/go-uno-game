@@ -49,7 +49,7 @@ func (gameController *GameController) actionOnTable(new_card Card) {
 		gameController.players.NextPlayer()
 		gameController.players.NextPlayer()
 	} else if new_card.action == REVERSE {
-		gameController.players.reverseQueue()
+		gameController.players.ReverseQueue()
 	} else if new_card.action == PLUS_TWO {
 		gameController.players.NextPlayer()
 		gameController.players.Top().TakeCard(gameController.table)

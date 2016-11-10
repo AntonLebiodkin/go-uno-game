@@ -1,12 +1,12 @@
 package main
 
 import (
-    "game_elements"
-	"time"
+	"game_elements"
 	"math/rand"
+	"time"
 )
 
-func main(){
+func main() {
 	rand.Seed(time.Now().UTC().UnixNano())
 	game := game_elements.GameController{}
 	game.StartGame()

@@ -61,3 +61,7 @@ func (cardsStack CardsStack) TopCard() Card {
 	}
 	return Card{}	
 }
+
+func (cardsStack CardsStack) Size() int {
+	return len(cardsStack.cards)
+}
